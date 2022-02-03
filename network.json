@@ -1,0 +1,23 @@
+{
+    "ip_config": {
+      "default_gateway": "10.42.94.129",
+      "dhcp_options": {
+        "domain_name": "ntnxlab.local",
+        "domain_name_servers": "10.42.94.52",
+        "domain_search": "ntnxlab.local"
+      },
+      "dhcp_server_address": "10.42.94.254",
+      "network_address": "10.42.94.128",
+      "pool": [
+        {
+          "range": "10.42.94.132 10.42.94.200"
+        }
+      ],
+      "prefix_length": 25
+    },
+    "name": "LAB Network",
+    "vlan_id": 491,
+    "vswitch_name": "br0"
+  }
+
+  

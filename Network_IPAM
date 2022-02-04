@@ -1,0 +1,30 @@
+from nutanixv2api import *
+import pprint
+
+def main():
+  base_url = "https://10.XX.XX.85:9440/api/nutanix/v2.0/"
+  api = nutanixApi(base_url, 'admin', 'Nutanix/1234')
+  body = {
+      "annotation": "nuran_net160",
+      "ip_config": {
+        "default_gateway": "10.XX.XXX.1",
+        "dhcp_options": {
+          "domain_name_servers": "8.X.X.8,4.X.X.4"
+        },
+        "network_address": "10.XX.XXX.0",
+        "pool": [
+          {
+            "range": "10.XX.XXX.10 10.XX.XXX.20"
+          }
+        ],
+        "prefix_length": 24
+      },
+      "name": "nuran_net_160",
+      "vlan_id": 160
+    }
+
+  network = api.network_create(body)
+  print network.text
+  
+if __name__ == "__main__":
+  main()

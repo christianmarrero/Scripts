@@ -1,0 +1,11 @@
+{
+    "cluster_uuid": "0005d70e-d433-0836-0000-00000000ec3f",
+    "generic_dto": [
+        {
+            "id": "0005d70e-d433-0836-0000-00000000ec3f::10",
+            "storage_container_uuid": "29e42355-a796-48a3-afc1-0a542074a3fa",
+            "name": "default-container-60479",
+            "compression_enabled": true  
+        }
+    ]
+}

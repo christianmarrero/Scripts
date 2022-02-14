@@ -3,24 +3,26 @@ import pprint
 
 def main():
   base_url = "https://10.XX.XX.85:9440/api/nutanix/v2.0/"
-  api = nutanixApi(base_url, 'admin', 'Nutanix/1234')
+  api = nutanixApi(base_url, 'admin', 'nx2Tech961!')
   body = {
-      "annotation": "nuran_net160",
+      "annotation": "LAB_Network",
       "ip_config": {
-        "default_gateway": "10.XX.XXX.1",
+        "default_gateway": "10.42.94.129",
         "dhcp_options": {
-          "domain_name_servers": "8.X.X.8,4.X.X.4"
+          "domain_name_servers": "10.42.94.52",
+          "domain_name":"ntnxlab.local",
+          "domain_search":"ntnxlab.local"
         },
-        "network_address": "10.XX.XXX.0",
+        "network_address": "10.42.94.128",
         "pool": [
           {
-            "range": "10.XX.XXX.10 10.XX.XXX.20"
+            "range": "10.42.94.132 10.42.94.200"
           }
         ],
-        "prefix_length": 24
+        "prefix_length": 25
       },
-      "name": "nuran_net_160",
-      "vlan_id": 160
+      "name": "LAB_Network",
+      "vlan_id": 491
     }
 
   network = api.network_create(body)

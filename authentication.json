@@ -1,7 +1,7 @@
 {
     "connection_type": "LDAP",
     "directory_type": "ACTIVE_DIRECTORY",
-    "directory_url": "ldap://10.42.94.52:389",
+    "directory_url": "ldap://10.42.46.51:389",
     "domain": "ntnxlab.local",
     "group_search_type": "NON_RECURSIVE",
     "name": "LAB_AD",
